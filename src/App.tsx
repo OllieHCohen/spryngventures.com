@@ -294,10 +294,26 @@ function App() {
           <ul className="look">
             {t.look.items.map((item, i) => {
               const Icon = lookIcons[i]
+              const isWales = i === 3
               return (
                 <li key={item.title} className="look__item">
-                  <span className="look__icon">
-                    <Icon size={22} strokeWidth={1.75} aria-hidden="true" />
+                  <span
+                    className={`look__icon ${isWales ? 'look__icon--flag' : ''}`}
+                  >
+                    {isWales ? (
+                      <img
+                        src="/wales-flag.svg"
+                        alt=""
+                        className="look__flag"
+                        aria-hidden="true"
+                      />
+                    ) : (
+                      <Icon
+                        size={22}
+                        strokeWidth={1.75}
+                        aria-hidden="true"
+                      />
+                    )}
                   </span>
                   <div>
                     <h3>{item.title}</h3>
@@ -358,7 +374,15 @@ function App() {
             <img src="/logo.png" alt="" className="footer__logo" />
             <div>
               <p className="footer__name">{t.footer.name}</p>
-              <p className="footer__tag">{t.footer.tag}</p>
+              <p className="footer__tag">
+                <img
+                  src="/wales-flag.svg"
+                  alt=""
+                  className="footer__flag"
+                  aria-hidden="true"
+                />
+                {t.footer.tag}
+              </p>
             </div>
           </div>
           <div className="footer__right">
