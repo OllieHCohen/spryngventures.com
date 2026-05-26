@@ -120,6 +120,7 @@ function App() {
           <span className="nav__wordmark">Spryng Ventures</span>
         </a>
         <nav className="nav__links" aria-label="Primary">
+          <a href="#story">Story</a>
           <a href="#thesis">Thesis</a>
           <a href="#sectors">What we back</a>
           <a href="#model">Investment</a>
@@ -177,6 +178,34 @@ function App() {
               <span className="stat__label">Total early-stage capital</span>
             </li>
           </ul>
+        </div>
+      </section>
+
+      <section id="story" className="section section--video">
+        <div className="section__inner section__inner--center">
+          <p className="kicker">Watch our story</p>
+          <h2 className="section__title">
+            A short film on what we believe &mdash; and who we exist to back.
+          </h2>
+          <p className="section__lede video__lede">
+            Two minutes on why we&rsquo;re investing in the next generation of
+            Welsh founders.
+          </p>
+          <div className="video">
+            <video
+              controls
+              preload="metadata"
+              poster="/logo.png"
+              playsInline
+              className="video__el"
+            >
+              <source
+                src="/spryng-investing-in-wales.mp4"
+                type="video/mp4"
+              />
+              Sorry, your browser doesn&rsquo;t support embedded video.
+            </video>
+          </div>
         </div>
       </section>
 

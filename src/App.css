@@ -342,6 +342,45 @@
   }
 }
 
+/* ---------- Video / Story ---------- */
+.section--video {
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+}
+
+.section--video .section__title,
+.section--video .video__lede {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video__lede {
+  margin-bottom: 40px;
+}
+
+.video {
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: #0d0a04;
+  border: 1px solid var(--line);
+  box-shadow:
+    0 24px 60px -20px rgba(15, 12, 6, 0.25),
+    0 0 0 1px rgba(245, 166, 35, 0.08),
+    0 30px 80px -30px rgba(245, 166, 35, 0.35);
+  aspect-ratio: 16 / 9;
+}
+
+.video__el {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  background: #0d0a04;
+}
+
 /* ---------- Why / Thesis ---------- */
 .section--why {
   background: var(--surface);
