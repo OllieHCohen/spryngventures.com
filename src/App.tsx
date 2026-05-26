@@ -1,3 +1,4 @@
+import { useRef, useState } from 'react'
 import {
   GraduationCap,
   Rocket,
@@ -10,6 +11,7 @@ import {
   ShieldCheck,
   ArrowDown,
   Mail,
+  Play,
 } from 'lucide-react'
 import './App.css'
 
@@ -112,6 +114,19 @@ const visionPoints = [
 ]
 
 function App() {
+  const videoRef = useRef<HTMLVideoElement>(null)
+  const [playing, setPlaying] = useState(false)
+
+  const startVideo = () => {
+    setPlaying(true)
+    const v = videoRef.current
+    if (v) {
+      v.play().catch(() => {
+        /* user can still hit native controls if autoplay is blocked */
+      })
+    }
+  }
+
   return (
     <div className="page">
       <header className="nav">
@@ -193,9 +208,9 @@ function App() {
           </p>
           <div className="video">
             <video
-              controls
+              ref={videoRef}
+              controls={playing}
               preload="metadata"
-              poster="/logo.png"
               playsInline
               className="video__el"
             >
@@ -205,6 +220,23 @@ function App() {
               />
               Sorry, your browser doesn&rsquo;t support embedded video.
             </video>
+            {!playing && (
+              <button
+                type="button"
+                className="video__poster"
+                onClick={startVideo}
+                aria-label="Play Spryng Ventures story"
+              >
+                <img
+                  src="/logo.png"
+                  alt=""
+                  className="video__poster-logo"
+                />
+                <span className="video__play" aria-hidden="true">
+                  <Play size={32} fill="currentColor" strokeWidth={0} />
+                </span>
+              </button>
+            )}
           </div>
         </div>
       </section>
