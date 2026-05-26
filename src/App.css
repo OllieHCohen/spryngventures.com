@@ -274,6 +274,15 @@
   box-shadow: 0 0 0 4px rgba(245, 166, 35, 0.18);
 }
 
+.eyebrow__flag {
+  width: 22px;
+  height: auto;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px rgba(15, 12, 6, 0.08),
+    0 1px 2px rgba(15, 12, 6, 0.1);
+  display: inline-block;
+}
+
 .hero__title {
   font-family: var(--display);
   font-weight: 700;

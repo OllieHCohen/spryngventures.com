@@ -115,7 +115,13 @@ function App() {
           <img src="/logo.png" alt="Spryng Ventures" className="hero__logo" />
 
           <p className="eyebrow">
-            <span className="eyebrow__dot" /> {t.hero.eyebrow}
+            <img
+              src="/wales-flag.svg"
+              alt=""
+              className="eyebrow__flag"
+              aria-hidden="true"
+            />{' '}
+            {t.hero.eyebrow}
           </p>
 
           <h1 className="hero__title">
