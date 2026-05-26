@@ -9,6 +9,7 @@ import {
   MapPin,
   ShieldCheck,
   ArrowDown,
+  Mail,
 } from 'lucide-react'
 import './App.css'
 
@@ -123,6 +124,7 @@ function App() {
           <a href="#sectors">What we back</a>
           <a href="#model">Investment</a>
           <a href="#vision">Vision</a>
+          <a href="#contact">Contact</a>
         </nav>
       </header>
 
@@ -370,6 +372,27 @@ function App() {
         </div>
       </section>
 
+      <section id="contact" className="section section--contact">
+        <div className="section__inner section__inner--center">
+          <p className="kicker">Contact us</p>
+          <h2 className="section__title">
+            Building something for the next generation of Wales? We&rsquo;d love
+            to hear from you.
+          </h2>
+          <p className="contact__lede">
+            Drop us a line and tell us about your company, your founders, and
+            the young people you&rsquo;re building for.
+          </p>
+          <a
+            href="mailto:contact@spryngventures.com"
+            className="btn btn--primary btn--lg contact__btn"
+          >
+            <Mail size={18} aria-hidden="true" />
+            contact@spryngventures.com
+          </a>
+        </div>
+      </section>
+
       <footer className="footer">
         <div className="footer__inner">
           <div className="footer__brand">
@@ -379,10 +402,18 @@ function App() {
               <p className="footer__tag">An angel syndicate for Wales.</p>
             </div>
           </div>
-          <p className="footer__meta">
-            &copy; {new Date().getFullYear()} Spryng Ventures. Backing the next
-            generation of Welsh founders.
-          </p>
+          <div className="footer__right">
+            <a
+              href="mailto:contact@spryngventures.com"
+              className="footer__email"
+            >
+              contact@spryngventures.com
+            </a>
+            <p className="footer__meta">
+              &copy; {new Date().getFullYear()} Spryng Ventures. Backing the
+              next generation of Welsh founders.
+            </p>
+          </div>
         </div>
       </footer>
     </div>
