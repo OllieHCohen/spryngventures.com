@@ -140,7 +140,7 @@ export const translations: Record<Lang, Translation> = {
       ctaSecondary: 'How we invest',
       stats: [
         { num: '£350k', label: 'Angel equity per deal' },
-        { num: '£350k', label: 'Match from Dev Bank of Wales' },
+        { num: '£350k', label: 'Potential match from the Development Bank of Wales' },
         { num: '£700k', label: 'Total early-stage capital' },
       ],
     },
@@ -232,7 +232,7 @@ export const translations: Record<Lang, Translation> = {
       titleStart: 'Up to',
       titleGradient: '£700,000',
       titleEnd:
-        'of early-stage capital, matched alongside the Development Bank of Wales.',
+        'of early-stage capital, including potential match funding of up to £350,000 from the Development Bank of Wales.',
       cols: [
         {
           label: 'Angel syndicate',
@@ -242,7 +242,7 @@ export const translations: Record<Lang, Translation> = {
         {
           label: 'Development Bank of Wales',
           big: '£350k',
-          hint: 'Matched alongside our investment',
+          hint: 'Potential match funding alongside our investment',
         },
         {
           label: 'Total available',
@@ -252,7 +252,7 @@ export const translations: Record<Lang, Translation> = {
       ],
       plus: '+',
       equals: '=',
-      foot: 'Qualifying Welsh startups can secure meaningful capital at the earliest stages of development — the moment it matters most.',
+      foot: 'We work closely with the Angels Invest Wales team at the Development Bank of Wales, so qualifying Welsh startups can secure meaningful capital at the earliest stages of development — the moment it matters most.',
     },
 
     look: {
@@ -344,7 +344,7 @@ export const translations: Record<Lang, Translation> = {
       ctaSecondary: 'Sut rydyn ni’n buddsoddi',
       stats: [
         { num: '£350k', label: 'Ecwiti gan ein hangylion' },
-        { num: '£350k', label: 'Cyfatebol gan Banc Datblygu Cymru' },
+        { num: '£350k', label: 'Cyllid cyfatebol posibl gan Fanc Datblygu Cymru' },
         { num: '£700k', label: 'Cyfanswm cyfalaf cam cynnar' },
       ],
     },
@@ -438,7 +438,7 @@ export const translations: Record<Lang, Translation> = {
       titleStart: 'Hyd at',
       titleGradient: '£700,000',
       titleEnd:
-        'o gyfalaf cam cynnar, wedi’i gyfateb ochr yn ochr â Banc Datblygu Cymru.',
+        'o gyfalaf cam cynnar, gan gynnwys cyllid cyfatebol posibl o hyd at £350,000 gan Fanc Datblygu Cymru.',
       cols: [
         {
           label: 'Grŵp angylion',
@@ -448,7 +448,7 @@ export const translations: Record<Lang, Translation> = {
         {
           label: 'Banc Datblygu Cymru',
           big: '£350k',
-          hint: 'Wedi’i gyfateb ochr yn ochr â’n buddsoddiad',
+          hint: 'Cyllid cyfatebol posibl ochr yn ochr â’n buddsoddiad',
         },
         {
           label: 'Cyfanswm sydd ar gael',
@@ -458,7 +458,7 @@ export const translations: Record<Lang, Translation> = {
       ],
       plus: '+',
       equals: '=',
-      foot: 'Gall busnesau newydd Cymreig cymwys sicrhau cyfalaf ystyrlon ar y camau cynharaf o ddatblygu — yr eiliad pan mae’n bwysicaf.',
+      foot: 'Rydyn ni’n gweithio’n agos gyda thîm Angels Invest Wales ym Manc Datblygu Cymru, felly gall busnesau newydd Cymreig cymwys sicrhau cyfalaf ystyrlon ar y camau cynharaf o ddatblygu — yr eiliad pan mae’n bwysicaf.',
     },
 
     look: {
