@@ -148,7 +148,7 @@ export const translations: Record<Lang, Translation> = {
     story: {
       kicker: 'Watch our story',
       title: 'A short film on what we believe — and who we exist to back.',
-      lede: 'Two minutes on why we’re investing in the next generation of Welsh founders.',
+      lede: 'Why we’re investing in the next generation of Welsh founders.',
       playAria: 'Play Spryng Ventures story',
     },
 
@@ -353,7 +353,7 @@ export const translations: Record<Lang, Translation> = {
       kicker: 'Gwyliwch ein stori',
       title:
         'Ffilm fer am yr hyn rydyn ni’n credu — a phwy rydyn ni’n bodoli i’w gefnogi.',
-      lede: 'Dau funud ar pam rydyn ni’n buddsoddi yng nghenhedlaeth nesaf sylfaenwyr Cymru.',
+      lede: 'Pam rydyn ni’n buddsoddi yng nghenhedlaeth nesaf sylfaenwyr Cymru.',
       playAria: 'Chwarae stori Spryng Ventures',
     },
 
